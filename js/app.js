@@ -61,3 +61,19 @@ getCancelBtn.addEventListener('click', () => {
           },
       }
     });
+
+// success story
+var successStorySlider = new Swiper(".success-story-slider", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
+alert("hellow")
