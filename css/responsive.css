@@ -8,8 +8,10 @@
 
 /* Mobile devies max width <<<<< */
 @media (max-width: 767px) {
-    .container{
+    .container {
+        max-width: 95%;
         width: 95%;
+        margin: 0px auto;
     }
     /* tvc ads */
     .tvc-modal {
@@ -38,6 +40,24 @@
     header {
         display: none;
     }
+    header.activeMenu {
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .our-service-wrapper, .office-info-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .call-to-action-wrapper button{
+        width: unset;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .testimonial-wrapper{
+        flex-direction: column;
+    }
+
     .left-slide, .right-slide {
         display: none;
     }
@@ -68,8 +88,7 @@
         top: -110px;
     }
     .featured-right h2 {
-        font-size: 52px;
-        line-height: 52px;
+        line-height: 35px;
         font-family: poppinsBold;
         margin-bottom: 11px;
     }
@@ -83,7 +102,7 @@
         flex-direction: column;
     }
     .blog-section{
-        padding: 0px;
+        padding: 20px 0px;
     }
 
     /* Campaign */
@@ -116,8 +135,7 @@
         flex-direction: column;
     }
     .footer-section{
-        margin-top: 60px;
-        height: 990px;
+
     }
     .footer-logo-thumb {
         position: relative;
@@ -138,7 +156,7 @@
         width: 180px;
     }
     .footer-box{
-        min-height: 230px;
+        padding: 10px 20px;
     }
     .footer-links li{
         padding: unset;
@@ -181,5 +199,225 @@
     .thumb-title{
         z-index: unset;
     }
-    
+    /* new style */
+    .form-wrapper{
+        width: 100%;
+    }
+    .mobile-header-wrapper{
+        flex-direction: unset;
+    }
+    .dia-footer-shape3{
+        display: none;
+    }
+    .footer-bottom{
+        height: unset;
+        background: var(--brandColor);
+    }
+    .footer-bottom-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: unset;
+    }
+    .bg1{
+        display: none;
+    }
+    .hero-content span {
+        font-size: 40px;
+        text-shadow: 3px 5px 4px #00000021;
+    }
+    .hero-content h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .hero-content{
+        margin-top: 100px;
+    }
+    .hero-content-buttons{
+        flex-direction: unset;
+    }
+    .about-button, .contact-button{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .hero-image {
+        width: 100%;
+        margin-top: unset;
+        position: relative;
+        height: unset;
+    }
+    .featured-in-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-in-box {
+        min-height: 90px;
+        padding: 10px;
+    }
+    .featured-right .span-light{
+        font-size: 35px;
+    }
+    .featured-right .span-bold{
+        font-size: 22px;
+    }
+    .grow-your-business-content h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .three-col-wrapper{
+        grid-gap: 7px;
+    }
+    .our-service-box{
+        border: 1px solid var(--brandColor);
+    }
+    .our-service-title h2{
+        font-size: 30px;
+    }
+    .underline{
+        margin-bottom: 10px;
+    }
+    .our-service-title{
+        margin-bottom: unset;
+    }
+    .testimonial-box iframe {
+        width: 100%;
+        height: 250px;
+    }
+    .counter-wrapper {
+        grid-gap: 7px;
+    }
+    .call-to-action-wrapper{
+        max-width: 100%;
+    }
+    .call-to-action-wrapper h2 {
+        font-size: 31px;
+        line-height: 40px;
+    }
+    .call-to-action-wrapper h3 {
+        text-transform: uppercase;
+        font-size: 24px;
+        margin: 13px 0px;
+        font-weight: 400;
+    }
+    .blog-title h2 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    .blog-title .underline {
+        margin: unset;
+    }
+    .form-wrapper  h2 {
+        padding: 12px 10px;
+        font-size: 15px;
+    }
+    .form-section{
+        padding: 35px 0px;
+    }
+    .form-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .office-wrapper {
+        grid-gap: 20px;
+    }
+    .office-box{
+        height: 145px;
+    }
+    .footer-bio p{
+        color: white;
+    }
+    .icon-wrapper{
+        padding: 35px 0px;
+    }
+    .icon-item svg{
+        height: auto;
+    }
+    .two-col-section {
+        padding: 30px 0px;
+    }
+    .first-col h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .client-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    .client-item img{
+        height: auto;
+    }
+    .client-header h2 {
+        font-size: 35px;
+        line-height: 41px;
+        margin-bottom: 8px;
+    }
+    .padding {
+        padding: 35px 0px;
+    }
+    .our-service-title h2 {
+        font-size: 24px;
+        max-width: 90%;
+        margin: 0px auto;
+    }
+    .our-service-template-header p {
+        font-size: 17px;
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+    .our-service-template-header {
+        margin-bottom: 20px !important;
+    }
+    .two-col-wrapper{
+        grid-gap: unset;
+    }
+    .success-story-item{
+        grid-gap: unset;
+    }
+    .success-story-content h2{
+        font-size: 18px;
+    }
+    .success-story-content h3 {
+        font-size: 15px;
+        margin-bottom: unset;
+        padding-bottom: unset;
+        line-height: 18px;
+    }
+    .success-story-content ul{
+        flex-direction: column;
+        grid-gap: unset;
+    }
+    .success-story-wrapper{
+        padding: unset;
+    }
+    .success-story-thumb {
+        height: 245px;
+        overflow: hidden;
+        margin-bottom: 6px;
+    }
+    .our-core-value-title-wrapper button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .our-core-value-content {
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .our-core-value-content p {
+        font-size: 16px;
+    }
+    .call-to-action-section {
+        padding: 35px 0px;
+    }
+    .we-white-hat-content p {
+        font-size: 18px;
+        text-align: left;
+    }
+    .we-are-white-hat-title h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .two-col-section{
+        padding-bottom: 10px;
+    }
 }

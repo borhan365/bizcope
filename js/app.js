@@ -1,6 +1,35 @@
 // Animate items
 new WOW().init();
 
+
+// sticky navbar
+var navbar = document.getElementById("MainMenu");
+console.log(navbar)
+var sticky = navbar.offsetTop;
+window.onscroll = () => {
+  // const appendLogo = document.getElementById('appendLogo')
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("activeMenu")
+    // appendLogo.classList.add("appendLogoActive")
+  } else {
+    navbar.classList.remove("activeMenu");
+    // appendLogo.classList.remove("appendLogoActive")
+  }
+
+  // click to top
+  const topBtn = document.getElementById("top");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.classList.add("active")
+  } else {
+    topBtn.classList.remove("active")
+  }
+
+  topBtn.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  })
+}
+
 // Desktop sidebar
 const menuBtn = document.getElementById('menuBtn'); 
 const sidebar = document.getElementById('sidebar');
@@ -37,43 +66,17 @@ getCancelBtn.addEventListener('click', () => {
   modal.classList.remove("active")
 })
 
-  // Campaign slider
-  var campaignSlider = new Swiper(".campaignSlider", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-          640: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-          },
-          767: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-          },
-          1024: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-          },
-      }
-    });
-
-// success story
-var successStorySlider = new Swiper(".success-story-slider", {
-  cssMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
-});
-
-alert("hellow")
+// tabs => SEO Pricing / Reporting / Accountability
+function latestPopularTabs(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
