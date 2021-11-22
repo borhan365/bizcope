@@ -4,7 +4,6 @@ new WOW().init();
 
 // sticky navbar
 var navbar = document.getElementById("MainMenu");
-console.log(navbar)
 var sticky = navbar.offsetTop;
 window.onscroll = () => {
   // const appendLogo = document.getElementById('appendLogo')
@@ -30,13 +29,11 @@ window.onscroll = () => {
   })
 }
 
-// Desktop sidebar
-const menuBtn = document.getElementById('menuBtn'); 
-const sidebar = document.getElementById('sidebar');
-
-menuBtn.addEventListener('click', () => {
-  sidebar.classList.add('active');
-
+// mobile sidebar
+const mobileMenuBtn = document.getElementById("mobileMenuBtn"); 
+mobileMenuBtn.addEventListener("click", () => {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('active');
 })
 
 const cancelBtn = document.getElementById("cancelBtn"); 
@@ -44,11 +41,6 @@ cancelBtn.addEventListener('click', () => {
   sidebar.classList.remove('active');
 })
 
-const mobileMenuBtn = document.getElementById("mobileMenuBtn"); 
-mobileMenuBtn.addEventListener("click", () => {
-  const sidebar = document.getElementById('sidebar');
-  sidebar.classList.add('active');
-})
 
 // popup modal
 

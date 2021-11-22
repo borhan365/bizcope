@@ -17,10 +17,11 @@
     <title>BizCope</title>
   </head>
   <body>
+
     <!-- Mobile header menu -->
     <section class="mobile-header-section desktop-hide">
       <div class="container">
-        <div class="mobile-header-wrapper flex">
+        <div class="mobile-header-wrapper mobile-header-main-menu flex">
           <!-- Logo -->
           <div class="mobile-logo-wrapper">
             <a href="index.html">
@@ -45,8 +46,93 @@
       </div>
     </section>
 
+    <!-- sidebar -->
+    <div id="sidebar" class="sidebar-wrapper">
+
+      <div class="sidebar-bg-bottom" style="background-image: url(./images/bg/contact.png);"></div>
+
+      <div class="mobile-header-wrapper flex">
+        <!-- Logo -->
+        <div class="mobile-logo-wrapper">
+          <a href="index.html">
+            <img
+              class="wow animate__animated animate__fadeInDown"
+              src="./images/logo.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- Navigation -->
+        <div class="menu-wrapper wow animate__animated animate__fadeInDown">
+          <ul>
+            <div id="cancelBtn" class="sidebar-close-icon">
+              <img src="./images/icons/cancel.png" alt="">
+          </div>
+          </ul>
+        </div>
+      </div>
+
+      <!-- sidebar body -->
+      <div class="sidebar-body-wrapper">
+        <div class="menu-wrapper sidebar-menu-wrapper">
+          <ul>
+            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">About</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="template.html">Services</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="blog.html">Blog</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">Career</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="contact.html">Contact</a></li>
+            <!-- <li class="wow animate__animated animate__fadeInDown" id="menuBtn">
+                        <a href="#">
+                            <img src="./images/icons/menu.png" alt="">
+                        </a>
+                    </li> -->
+            <li class="wow animate__animated animate__fadeInDown">
+              <button class="contact-button" href="page.html">Start Now</button>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-box footer-address-box sidebar-footer-address-box">
+          <div class="footer-title">
+            <h2>Office Address</h2>
+            <div class="footer-underline"></div>
+          </div>
+          <div class="footer-address-wraper">
+            <li>
+              <span class="bold">Office: </span> &nbsp; 89/7 Gopibag, Dhaka 1203, Bangladesh
+            </li>
+            <li><strong>Email: </strong> &nbsp; bizcope@gmail.com</li>
+            <li><strong>Mobile:</strong> &nbsp; +8801979093636</li>
+          </div>
+        </div>
+          <!-- <h2>About Safely Tea</h2>
+          <div class="sidebar-bio">
+              <p>
+                  SAFELY has a long history of providing the highest quality tea while serving the community at large. Our teas are known and appreciated throughout Bangladesh. After so many years of serving our customers, we are still dedicated to ensuring that you enjoy the best, freshest and finest tea.
+              </p> -->
+
+              <!-- social -->
+              <div>
+                <h4>Connent with us</h4>
+                  <div class="underline sidebar-underline"></div>
+                  <ul id="social">
+                      <li><a href="https://www.facebook.com/Safelyteabd">
+                          <img src="./images/icons/bxl-facebook-circle.svg" alt="">
+                      </a></li>
+                      <li><a href="https://www.instagram.com/safelyteabd/">
+                          <img src="./images/icons/bxl-instagram-alt.svg" alt="">
+                      </a></li>
+                      <li><a href="https://www.youtube.com/channel/UCBqldXp6DIkKTYnDEy09YOw">
+                          <img src="./images/icons/bxl-youtube.svg" alt="">
+                      </a></li>
+                  </ul>
+              </div>
+              </div>
+      </div>
+  </div>
+  <!-- sidebar -->
+
     <!-- Header -->
-    <header>
+    <header id="MainMenu">
       <div class="container flex">
         <!-- Logo -->
         <div class="logo-wrapper">
@@ -59,19 +145,19 @@
           </a>
         </div>
         <!-- Navigation -->
-        <div class="menu-wrapper wow animate__animated animate__fadeInDown">
+        <div class="menu-wrapper">
           <ul>
-            <li><a href="page.html">About</a></li>
-            <li><a href="page.html">Services</a></li>
-            <li><a href="page.html">Blog</a></li>
-            <li><a href="page.html">Career</a></li>
-            <li><a href="page.html">Contact</a></li>
-            <!-- <li id="menuBtn">
+            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">About</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="template.html">Services</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="blog.html">Blog</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">Career</a></li>
+            <li class="wow animate__animated animate__fadeInDown"><a href="contact.html">Contact</a></li>
+            <!-- <li class="wow animate__animated animate__fadeInDown" id="menuBtn">
                         <a href="#">
                             <img src="./images/icons/menu.png" alt="">
                         </a>
                     </li> -->
-            <li>
+            <li class="wow animate__animated animate__fadeInDown">
               <button class="contact-button" href="page.html">Start Now</button>
             </li>
           </ul>
@@ -149,98 +235,101 @@
 
     <!-- Footer -->
     <footer class="footer-section">
-        <!-- bg -->
-        <div class="dia-footer-shape3 position-absolute">
-          <img src="./images/kits/diamap.png" alt="" />
-        </div>
-  
-        <div class="container">
-          <!-- footer wrapper -->
-          <div class="footer-wrapper">
-            <!-- Item -->
-            <div class="footer-box">
-              <div class="footer-logo-thumb">
-                <a href="index.html">
-                  <img src="./images/logo.png" alt="" />
-                </a>
-              </div>
-              <div class="footer-bio">
-                <p>
-                  When we started 11 years ago, it was the Nahid Hasan and a small team. We were desperate, dedicated, and keen to learn new things to prove ourselves. 
-                </p>
-              </div>
+      <!-- bg -->
+      <div class="dia-footer-shape3 position-absolute">
+        <img src="./images/kits/diamap.png" alt="" />
+      </div>
+
+      <div id="top" class="up-arrow mobile-hide">
+        <img src="./images/icons/arrow-up.svg" alt="" />
+      </div>
+
+      <div class="container">
+        <!-- footer wrapper -->
+        <div class="footer-wrapper">
+          <!-- Item -->
+          <div class="footer-box">
+            <div class="footer-logo-thumb">
+              <a href="index.html">
+                <img src="./images/logo.png" alt="" />
+              </a>
             </div>
-  
-            <!-- Item -->
-            <div class="footer-box">
-              <div class="footer-title">
-                <h2>Company Details</h2>
-                <div class="footer-underline"></div>
-              </div>
-              <div class="footer-links">
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Carrier</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
+            <div class="footer-bio">
+              <p>
+                When we started 11 years ago, it was the Nahid Hasan and a small team. We were desperate, dedicated, and keen to learn new things to prove ourselves. 
+              </p>
             </div>
-  
-            <!-- Item -->
-            <div class="footer-box">
-              <div class="footer-title">
-                <h2>Our Services</h2>
-                <div class="footer-underline"></div>
-              </div>
-              <div class="footer-links">
-                <ul>
-                  <li><a href="#">SEO</a></li>
-                  <li><a href="#">Digital Marketing</a></li>
-                  <li><a href="#">Social Media Marketing</a></li>
-                  <li><a href="#">Web Design & Development</a></li>
-                </ul>
-              </div>
+          </div>
+
+          <!-- Item -->
+          <div class="footer-box">
+            <div class="footer-title">
+              <h2>Company Details</h2>
+              <div class="footer-underline"></div>
             </div>
-  
-            <!-- Item -->
-            <div class="footer-box footer-address-box">
-              <div class="footer-title">
-                <h2>Office Address</h2>
-                <div class="footer-underline"></div>
-              </div>
-              <div class="footer-address-wraper">
-                <li>
-                  <strong>Office: </strong> &nbsp; 89/7 Gopibag, Dhaka 1203, Bangladesh
-                </li>
-                <li><strong>Email: </strong> &nbsp; safelybd@gmail.com</li>
-                <li><strong>Mobile:</strong> &nbsp; +8801979093636</li>
-              </div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Carrier</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="footer-box">
+            <div class="footer-title">
+              <h2>Our Services</h2>
+              <div class="footer-underline"></div>
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Social Media Marketing</a></li>
+                <li><a href="#">Web Design & Development</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="footer-box footer-address-box">
+            <div class="footer-title">
+              <h2>Office Address</h2>
+              <div class="footer-underline"></div>
+            </div>
+            <div class="footer-address-wraper">
+              <li>
+                <strong>Office: </strong> &nbsp; 89/7 Gopibag, Dhaka 1203, Bangladesh
+              </li>
+              <li><strong>Email: </strong> &nbsp; bizcope@gmail.com</li>
+              <li><strong>Mobile:</strong> &nbsp; +8801979093636</li>
             </div>
           </div>
         </div>
-  
-        <!-- footer bottom -->
-        <div class="container">
-          <div class="flex footer-bottom">
-            <div class="footer-bottom-box">
-              <p>© All right & reserved 2021, by BizCope</p>
-            </div>
-            <div class="footer-bottom-box flex gap-20">
-              <a href="#">Help</a>
-              <a href="#">Terms &amp; Conditions </a>
-              <a href="#">Privacy </a>
-            </div>
+      </div>
+
+      <!-- footer bottom -->
+      <div class="container">
+        <div class="flex footer-bottom">
+          <div class="footer-bottom-box">
+            <p>© All right & reserved 2021, by BizCope</p>
+          </div>
+          <div class="footer-bottom-box flex gap-20">
+            <a href="#">Help</a>
+            <a href="#">Terms &amp; Conditions </a>
+            <a href="#">Privacy </a>
           </div>
         </div>
-      </footer>
-      <!-- Footer -->
-  
-      <script src="./js/swiper-bundle.min.js"></script>
-      <script src="./js/anime.min.js"></script>
-      <script src="./js/wow.min.js"></script>
-      <script src="./js/slider.js"></script>
-      <script src="./js/app.js"></script>
-    </body>
-  </html>
-  
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
