@@ -72,3 +72,10 @@ function latestPopularTabs(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// sidebar menu icon
+const sidebarMenuIcon = document.getElementById('sidebarMenuIcon')
+sidebarMenuIcon.addEventListener('click', () => {
+  const sidebarDropdownItem = document.getElementById('sidebarDropdownItem')
+  sidebarDropdownItem.classList.toggle('active')
+})
