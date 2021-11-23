@@ -175,7 +175,7 @@
 
     /* Single page */
     .single-thumb{
-        height: 230px;
+        height: 95px;
     }
     .single-title{
         bottom: 4px;
@@ -212,12 +212,16 @@
     .footer-bottom{
         height: unset;
         background: var(--brandColor);
+        grid-gap: 3px;
+        padding-top: 10px;
     }
     .footer-bottom-box {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: unset;
+        border-bottom: 1px solid #1996c9;
+        padding-bottom: 8px;
     }
     .bg1{
         display: none;
@@ -356,8 +360,6 @@
     }
     .our-service-title h2 {
         font-size: 24px;
-        max-width: 90%;
-        margin: 0px auto;
     }
     .our-service-template-header p {
         font-size: 17px;
@@ -444,5 +446,20 @@
     }
     .form-content .call-to-action-wrapper{
         padding-top: 10px;
+    }
+    .footer-bottom-box a{
+        font-size: 14px;
+    }
+    main {
+        padding-top: 60px;
+    }
+    .single-bg-section{
+        height: 70px;
+    }
+    .single-thumb-and-title {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 15px;
     }
 }

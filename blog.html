@@ -18,12 +18,133 @@
   </head>
   <body>
 
-    <!-- Mobile header menu -->
-    <section class="mobile-header-section desktop-hide">
-      <div class="container">
-        <div class="mobile-header-wrapper mobile-header-main-menu flex">
+      <!-- Mobile header menu -->
+      <section class="mobile-header-section desktop-hide">
+        <div class="container">
+          <div class="mobile-header-wrapper mobile-header-main-menu flex">
+            <!-- Logo -->
+            <div class="mobile-logo-wrapper">
+              <a href="index.html">
+                <img src="./images/logo.png" alt=""/>
+              </a>
+            </div>
+            <!-- Navigation -->
+            <div class="menu-wrapper">
+              <ul>
+                <li id="mobileMenuBtn">
+                  <a href="#">
+                    <img src="./images/icons/menu.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sidebar -->
+      <div id="sidebar" class="sidebar-wrapper">
+
+        <div class="sidebar-bg-bottom" style="background-image: url(./images/bg/contact.png);"></div>
+
+        <div class="mobile-header-wrapper flex">
           <!-- Logo -->
           <div class="mobile-logo-wrapper">
+            <a href="index.html">
+              <img
+                src="./images/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- Navigation -->
+          <div class="menu-wrapper">
+            <ul>
+              <div id="cancelBtn" class="sidebar-close-icon">
+                <img src="./images/icons/cancel.png" alt="">
+            </div>
+            </ul>
+          </div>
+        </div>
+
+        <!-- sidebar body -->
+        <div class="sidebar-body-wrapper">
+          <div class="menu-wrapper sidebar-menu-wrapper">
+            <ul>
+              <li><a href="page.html">About</a></li>
+              <li class="sidebar-dropdown">
+                <a href="#" id="sidebarMenuIcon">Services
+                  <img class="w-100" src="./images/icons/plus.png" alt="">
+                </a>
+
+                <!-- dropdown menu list -->
+                <div id="sidebarDropdownItem" class="sidebar-dropdown-menu-list">
+                  <ul>
+                    <li><a href="template.html">SEO</a></li>
+                    <li><a href="template.html">Graphic Design</a></li>
+                    <li><a href="template.html">Web Design & Development</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="page.html">Career</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <!-- <li id="menuBtn">
+                          <a href="#">
+                              <img src="./images/icons/menu.png" alt="">
+                          </a>
+                      </li> -->
+              <li class="sidebar-li-button wow animate__animated animate__fadeInDown">
+                <button class="contact-button" href="page.html">Start Now</button>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="footer-box footer-address-box sidebar-footer-address-box">
+            <div class="footer-title">
+              <h2>Office Address</h2>
+              <div class="footer-underline"></div>
+            </div>
+            <div class="footer-address-wraper">
+              <li>
+                <span class="bold">Office: </span> &nbsp; 89/7 Gopibag, Dhaka 1203, Bangladesh
+              </li>
+              <li><strong>Email: </strong> &nbsp; bizcope@gmail.com</li>
+              <li><strong>Mobile:</strong> &nbsp; +8801979093636</li>
+            </div>
+          </div> -->
+            <!-- <h2>About Safely Tea</h2>
+            <div class="sidebar-bio">
+                <p>
+                    SAFELY has a long history of providing the highest quality tea while serving the community at large. Our teas are known and appreciated throughout Bangladesh. After so many years of serving our customers, we are still dedicated to ensuring that you enjoy the best, freshest and finest tea.
+                </p> -->
+
+                <!-- social -->
+                <div class="sidebar-social">
+                  <h4>Connent with us</h4>
+                    <div class="underline sidebar-underline"></div>
+                    <ul id="social">
+                        <li><a href="https://www.facebook.com/Safelyteabd">
+                            <img src="./images/icons/bxl-facebook-circle.svg" alt="">
+                        </a></li>
+                        <li><a href="https://www.instagram.com/safelyteabd/">
+                            <img src="./images/icons/bxl-instagram-alt.svg" alt="">
+                        </a></li>
+                        <li><a href="https://www.youtube.com/channel/UCBqldXp6DIkKTYnDEy09YOw">
+                            <img src="./images/icons/bxl-youtube.svg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+    </div>
+    <!-- sidebar -->
+
+      <!-- Header -->
+      <header id="MainMenu">
+        <div class="container flex">
+          <!-- Logo -->
+          <div class="logo-wrapper">
             <a href="index.html">
               <img
                 class="wow animate__animated animate__fadeInDown"
@@ -33,162 +154,62 @@
             </a>
           </div>
           <!-- Navigation -->
-          <div class="menu-wrapper wow animate__animated animate__fadeInDown">
+          <div class="menu-wrapper">
             <ul>
-              <li id="mobileMenuBtn">
-                <a href="#">
-                  <img src="./images/icons/menu.png" alt="" />
+              <li><a href="page.html">About</a></li>
+              <li class="dropdown-menu">
+                <a href="template.html">Services 
+                  <img src="./images/icons/down-arrow.png" alt="">
                 </a>
+
+                <!-- dropdown menu -->
+                <div class="dropdown-menu-wrapper">
+                  <ul>
+                    <li><a href="template.html">SEO</a></li>
+                    <li><a href="template.html">Graphic Design</a></li>
+                    <li><a href="template.html">Web Design & Development</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="page.html">Career</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <!-- <li id="menuBtn">
+                          <a href="#">
+                              <img src="./images/icons/menu.png" alt="">
+                          </a>
+                      </li> -->
+              <li>
+                <button class="contact-button" href="page.html">Start Now</button>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </section>
+        <section class="tvc-modal" id="modal">
+          <div class="featured-modal">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/1PqgskT1kpU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
 
-    <!-- sidebar -->
-    <div id="sidebar" class="sidebar-wrapper">
-
-      <div class="sidebar-bg-bottom" style="background-image: url(./images/bg/contact.png);"></div>
-
-      <div class="mobile-header-wrapper flex">
-        <!-- Logo -->
-        <div class="mobile-logo-wrapper">
-          <a href="index.html">
+            <!-- cancle -->
             <img
-              class="wow animate__animated animate__fadeInDown"
-              src="./images/logo.png"
+              id="tvcCancelBtn"
+              class="tvc-cancel"
+              src="./images/icons/cancel.svg"
               alt=""
             />
-          </a>
-        </div>
-        <!-- Navigation -->
-        <div class="menu-wrapper wow animate__animated animate__fadeInDown">
-          <ul>
-            <div id="cancelBtn" class="sidebar-close-icon">
-              <img src="./images/icons/cancel.png" alt="">
           </div>
-          </ul>
-        </div>
-      </div>
-
-      <!-- sidebar body -->
-      <div class="sidebar-body-wrapper">
-        <div class="menu-wrapper sidebar-menu-wrapper">
-          <ul>
-            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">About</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="template.html">Services</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="blog.html">Blog</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">Career</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="team.html">Team</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="contact.html">Contact</a></li>
-            <!-- <li class="wow animate__animated animate__fadeInDown" id="menuBtn">
-                        <a href="#">
-                            <img src="./images/icons/menu.png" alt="">
-                        </a>
-                    </li> -->
-            <li class="wow animate__animated animate__fadeInDown">
-              <button class="contact-button" href="page.html">Start Now</button>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-box footer-address-box sidebar-footer-address-box">
-          <div class="footer-title">
-            <h2>Office Address</h2>
-            <div class="footer-underline"></div>
-          </div>
-          <div class="footer-address-wraper">
-            <li>
-              <span class="bold">Office: </span> &nbsp; 89/7 Gopibag, Dhaka 1203, Bangladesh
-            </li>
-            <li><strong>Email: </strong> &nbsp; bizcope@gmail.com</li>
-            <li><strong>Mobile:</strong> &nbsp; +8801979093636</li>
-          </div>
-        </div>
-          <!-- <h2>About Safely Tea</h2>
-          <div class="sidebar-bio">
-              <p>
-                  SAFELY has a long history of providing the highest quality tea while serving the community at large. Our teas are known and appreciated throughout Bangladesh. After so many years of serving our customers, we are still dedicated to ensuring that you enjoy the best, freshest and finest tea.
-              </p> -->
-
-              <!-- social -->
-              <div>
-                <h4>Connent with us</h4>
-                  <div class="underline sidebar-underline"></div>
-                  <ul id="social">
-                      <li><a href="https://www.facebook.com/Safelyteabd">
-                          <img src="./images/icons/bxl-facebook-circle.svg" alt="">
-                      </a></li>
-                      <li><a href="https://www.instagram.com/safelyteabd/">
-                          <img src="./images/icons/bxl-instagram-alt.svg" alt="">
-                      </a></li>
-                      <li><a href="https://www.youtube.com/channel/UCBqldXp6DIkKTYnDEy09YOw">
-                          <img src="./images/icons/bxl-youtube.svg" alt="">
-                      </a></li>
-                  </ul>
-              </div>
-              </div>
-      </div>
-  </div>
-  <!-- sidebar -->
-
-    <!-- Header -->
-    <header id="MainMenu">
-      <div class="container flex">
-        <!-- Logo -->
-        <div class="logo-wrapper">
-          <a href="index.html">
-            <img
-              class="wow animate__animated animate__fadeInDown"
-              src="./images/logo.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <!-- Navigation -->
-        <div class="menu-wrapper">
-          <ul>
-            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">About</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="template.html">Services</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="blog.html">Blog</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="page.html">Career</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="team.html">Team</a></li>
-            <li class="wow animate__animated animate__fadeInDown"><a href="contact.html">Contact</a></li>
-            <!-- <li class="wow animate__animated animate__fadeInDown" id="menuBtn">
-                        <a href="#">
-                            <img src="./images/icons/menu.png" alt="">
-                        </a>
-                    </li> -->
-            <li class="wow animate__animated animate__fadeInDown">
-              <button class="contact-button" href="page.html">Start Now</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <section class="tvc-modal" id="modal">
-        <div class="featured-modal">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/1PqgskT1kpU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-
-          <!-- cancle -->
-          <img
-            id="tvcCancelBtn"
-            class="tvc-cancel"
-            src="./images/icons/cancel.svg"
-            alt=""
-          />
-        </div>
-      </section>
-    </header>
-    <!-- Header -->
-
+        </section>
+      </header>
+      <!-- Header -->
+      
 <main>
       <!-- blog section -->
       <section class="blog-section">
