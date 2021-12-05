@@ -243,6 +243,7 @@
     .about-button, .contact-button{
         padding: 10px 15px;
         font-size: 16px;
+        max-width: 97%;
     }
     .hero-image {
         width: 100%;
@@ -400,6 +401,7 @@
     .our-core-value-title-wrapper button {
         padding: 5px 10px;
         font-size: 12px;
+        min-width: max-content;
     }
     .our-core-value-content {
         padding: 5px;
@@ -461,5 +463,15 @@
         width: 100%;
         overflow: hidden;
         margin-bottom: 15px;
+    }
+    .portfolio-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+    }
+    .our-core-value-title-wrapper{
+        overflow-y: scroll;
+    }
+    .pricing-wrapper{
+        overflow-y: scroll;
     }
 }
